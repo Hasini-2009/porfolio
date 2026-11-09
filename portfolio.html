@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pentela Hasini – Portfolio</title>
+<style>
+:root{
+  --bg:#f3f6f4;--surface:#ffffff;--ink:#14231f;--muted:#5a6b66;--line:#d3ddd9;--accent:#0f6b5c;--accent-ink:#ffffff;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1816;--surface:#16231f;--ink:#e6efec;--muted:#9bb0aa;--line:#2a3b36;--accent:#4fc7b0;--accent-ink:#06201b}}
+:root[data-theme="dark"]{--bg:#0e1816;--surface:#16231f;--ink:#e6efec;--muted:#9bb0aa;--line:#2a3b36;--accent:#4fc7b0;--accent-ink:#06201b}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:6px;flex-wrap:wrap;justify-content:center;padding:10px 12px}
+nav a{text-decoration:none;color:var(--ink);padding:6px 14px;border-radius:999px;font-size:.95rem}
+nav a:hover{background:var(--surface)}
+section{max-width:860px;margin:0 auto;padding:72px 22px 20px}
+section h2{font-size:2rem;margin-bottom:22px;padding-bottom:10px;border-bottom:2px solid var(--accent);display:inline-block}
+#home{padding-top:96px;padding-bottom:40px}
+#home h1{font-size:clamp(2.6rem,9vw,4.6rem);letter-spacing:-.02em}
+.role{font-size:1.2rem;color:var(--accent);margin:10px 0 18px;font-weight:600}
+.lead{font-size:1.1rem;max-width:60ch}
+.status{display:inline-block;margin-top:18px;padding:8px 14px;border:1px solid var(--line);background:var(--surface);border-radius:8px;font-size:.95rem}
+.btns{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 22px;border-radius:8px;text-decoration:none;font-weight:600;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+h3{font-size:1.25rem;margin:26px 0 8px}
+p{margin:0 0 12px;max-width:68ch}
+ul{margin:0;padding-left:20px}li{margin-bottom:6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0}
+.tags li{margin:0;padding:5px 13px;background:var(--surface);border:1px solid var(--line);border-radius:999px;font-size:.92rem}
+.edu{background:var(--surface);border-left:4px solid var(--accent);padding:14px 18px;margin-bottom:12px;border-radius:0 8px 8px 0}
+.edu b{display:block}.edu span{color:var(--muted);font-size:.93rem}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:18px}
+.proj h3{margin-top:0}
+.proj .tags{margin:12px 0 0}
+.contact-list{list-style:none;padding:0}
+.contact-list li{padding:10px 0;border-bottom:1px solid var(--line)}
+.contact-list span{display:inline-block;min-width:90px;color:var(--muted)}
+footer{text-align:center;color:var(--muted);padding:50px 20px;font-size:.9rem}
+</style>
+</head>
+<body>
+<nav aria-label="Main">
+  <a href="#home">Home</a><a href="#about">About Me</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h1>Pentela Hasini</h1>
+  <div class="role">Aspiring AI and Machine Learning Engineer</div>
+  <p class="lead">I’m a curious first-year student who enjoys learning how machines learn from data. I’m building a strong base in programming and mathematics, and I want to create AI projects that solve real problems.</p>
+  <div class="status">Currently a first-year B.Tech student in Artificial Intelligence and Machine Learning (AI-ML)</div>
+  <div class="btns"><a class="btn primary" href="#projects">View my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <h3>Educational background</h3>
+  <div class="edu"><b>B.Tech, Artificial Intelligence and Machine Learning</b><span>2026 – 2030 (expected)</span></div>
+  <div class="edu"><b>Intermediate / Class XII</b><span>Score: 98.3%</span></div>
+  <h3>Interests</h3>
+  <ul>
+    <li>Solving problems with AI tools</li>
+    <li>Participating in hackathons</li>
+    <li>Joining technical clubs and learning with peers</li>
+    <li>Learning Python</li>
+  </ul>
+  <h3>Learning goals and career aspirations</h3>
+  <p>In the short term, I want to master Python, strengthen my maths for machine learning, and build small projects every semester. Long term, I aim to work as an AI/ML engineer on products that make a real difference, and to keep learning as the field grows.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <h3>Programming languages</h3>
+  <ul class="tags"><li>Python (learning)</li></ul>
+  <h3>Technical skills</h3>
+  <ul class="tags"><li>Machine learning basics (learning)</li><li>Using AI tools to solve problems (beginner)</li></ul>
+  <h3>Other relevant skills</h3>
+  <ul class="tags"><li>Eager to learn</li><li>Problem solving (developing)</li><li>Teamwork through clubs and hackathons (starting)</li></ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <article class="proj">
+    <h3>Sports Hub Platform</h3>
+    <p>A sports platform I built during a hackathon, turning an idea into a working project within a limited time. It was my first hands-on experience of building a complete project and presenting it.</p>
+    <ul class="tags"><li>Hackathon project</li></ul>
+  </article>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <h3>Certifications</h3>
+  <ul>
+    <li>None yet. My next goal is to complete an online Python course.</li>
+  </ul>
+  <h3>Awards and academic achievement</h3>
+  <ul>
+    <li>Scored 98.3% in intermediate (Class XII)</li>
+  </ul>
+  <h3>Participation and other achievements</h3>
+  <ul>
+    <li>Participated in a hackathon and built the Sports Hub Platform</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>I’m open to internships, projects and collaborations. The quickest way to reach me is by email.</p>
+  <ul class="contact-list">
+    <li><span>Email</span><a href="mailto:hasinipentela2009@gmail.com">hasinipentela2009@gmail.com</a></li>
+    <li><span>GitHub</span><a href="https://github.com/hasini-2009">github.com/hasini-2009</a></li>
+  </ul>
+</section>
+
+<footer>© 2026 Pentela Hasini</footer>
+</body>
+</html>
